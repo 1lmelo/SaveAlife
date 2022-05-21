@@ -75,6 +75,22 @@
         "frameworkReferences": [
           "Microsoft.AspNetCore.App"
         ]
+      },
+      "Save.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "Swashbuckle.AspNetCore": "5.6.3"
+        },
+        "compile": {
+          "bin/placeholder/Save.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Save.Domain.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -185,10 +201,16 @@
         "swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
         "swashbuckle.aspnetcore.swaggerui.nuspec"
       ]
+    },
+    "Save.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Save.Domain/Save.Domain.csproj",
+      "msbuildProject": "../Save.Domain/Save.Domain.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Save.Domain >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -225,7 +247,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\lucas.d.santos.melo\\Desktop\\SaveAlife\\Save.Api\\Save.Domain\\Save.Domain.csproj": {
+              "projectPath": "C:\\Users\\lucas.d.santos.melo\\Desktop\\SaveAlife\\Save.Api\\Save.Domain\\Save.Domain.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -27,3 +27,15 @@ C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\obj\Debug\net5.
 C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\obj\Debug\net5.0\ref\Save.Api.dll
 C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\obj\Debug\net5.0\Save.Api.pdb
 C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\obj\Debug\net5.0\Save.Api.genruntimeconfig.cache
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.deps.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.runtimeconfig.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.runtimeconfig.dev.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.deps.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.runtimeconfig.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.runtimeconfig.dev.json
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.exe
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.exe
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.dll
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.dll
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Application.pdb
+C:\Users\lucas.d.santos.melo\Desktop\SaveAlife\Save.Api\Save.Api\bin\Debug\net5.0\Save.Domain.pdb
