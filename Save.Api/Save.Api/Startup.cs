@@ -2,11 +2,17 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
+using Save.Application.GetCovidData;
+using Save.Application.PostCovidData;
+using Save.Domain.Interfaces;
+using Save.Infrastructure.Entity;
+using Save.Infrastructure.Entity.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +34,15 @@ namespace Save.Api
         {
 
             services.AddControllers();
+
+            services.AddDbContext<SaveContext>();
+
+            services.AddScoped<ICovidRepository, CovidRepository>();
+            services.AddScoped<GetCovidDataQuery, GetCovidDataQuery>();
+            services.AddScoped<PostCovidDataQuery, PostCovidDataQuery>();
+
+            services.AddHttpContextAccessor();
+            services.AddMvc();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Save a life", Version = "v1" });

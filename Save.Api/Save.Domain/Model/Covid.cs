@@ -5,8 +5,9 @@ using System.Threading.Tasks;
 
 namespace Save.Domain.Model
 {
-    public class Covid
+    public class Covid 
     {
+        public int Id { get; set; }
         public string Country { get; set; }
         public int Cases { get; set; }
         public int Confirmed { get; set; }
