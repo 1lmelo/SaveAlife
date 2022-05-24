@@ -5,8 +5,6 @@ namespace Save.Application.GetCovidData
 {
     public class GetCovidDataResponse
     {
-        public string Message { get; set; }
-        public string StatusCode { get; set; }
         public List<Covid> Data { get; set; }
     }
 }

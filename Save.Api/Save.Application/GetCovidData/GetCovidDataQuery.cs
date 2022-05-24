@@ -1,4 +1,5 @@
 ﻿using Save.Domain.Interfaces;
+using Save.Domain.Model;
 using Save.Infrastructure.Entity;
 using Save.Infrastructure.Entity.Context;
 using System;
@@ -18,16 +19,9 @@ namespace Save.Application.GetCovidData
             _covidRepository = new CovidRepository(new SaveContext());
         }
 
-        public GetCovidDataResponse GetData()
+        public List<Covid> GetData()
         {
-            var data = _covidRepository.FindAllDataCovid();
-
-            var response = new GetCovidDataResponse()
-            {
-                StatusCode = "200",
-                Message = "Success",
-                Data = data
-            };
+            var response = _covidRepository.FindAllDataCovid();
 
             return response;
         }

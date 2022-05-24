@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Save.Application.GetCovidData;
 using Save.Application.PostCovidData;
+using Save.Domain.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,7 +28,7 @@ namespace Save.Api.Controllers
 
         [HttpGet]
         [Route("GetDataCovid")]
-        public GetCovidDataResponse GetDataCovid()
+        public List<Covid> GetDataCovid()
         {
             var dataCovid = _covidDataQuery.GetData();
 
