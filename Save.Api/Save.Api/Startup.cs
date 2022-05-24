@@ -34,7 +34,6 @@ namespace Save.Api
         {
 
             services.AddControllers();
-
             services.AddDbContext<SaveContext>();
 
             services.AddScoped<ICovidRepository, CovidRepository>();
@@ -43,6 +42,7 @@ namespace Save.Api
 
             services.AddHttpContextAccessor();
             services.AddMvc();
+            services.AddCors();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Save a life", Version = "v1" });
@@ -58,6 +58,9 @@ namespace Save.Api
                 app.UseSwagger();
                 app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "Save v1"));
             }
+
+            app.UseCors(options =>
+            options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
 
             app.UseHttpsRedirection();
 
